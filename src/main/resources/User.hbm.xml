@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+  <class name="com.demo.rest.User" table="register">
+	    <id name="userId" column="uid">
+	      <generator class="native"/>
+	    </id>
+	   <property name="userEmail" column="email"/>
+	   <property name="userName" column="username"/>
+	   <property name="password" column="password"/>
+	   <property name="role" column="role"/>
+	   <property name="userNumber" column="usernumber"/>
+	
+   </class>
+</hibernate-mapping>
